@@ -1,0 +1,397 @@
+/* Para dispositivos de 1024px ou menos */
+@media (max-width: 1024px) {
+    
+    /* Seção Header */
+    .header {
+        padding: 15px 5%; 
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column; 
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Seção Home */
+    .home {
+        padding: 320px 5% 20px; 
+        text-align: center;
+    }
+
+    .conteudo-home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-texto h1 {
+        font-size: 36px; 
+        line-height: 1.2;
+    }
+
+    .home-texto h3 {
+        font-size: 28px;
+    }
+
+    .home-texto p {
+        font-size: 16px;
+    }
+
+    .home-img img {
+        display: none;
+    }
+
+    /* Seção Sobre */
+    .sobre {
+        padding: 150px 5%; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding-bottom: 40px;
+    }
+
+    #sobre .sobre-img img {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .sobre-txt h2 {
+        font-size: 30px;
+    }
+
+    .sobre-txt p {
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 600px;
+    }
+
+    /* Seção Habilidades */
+    .habilidades-container {
+        flex-direction: column; 
+        gap: 20px;
+        align-items: center;
+    }
+
+    .habilidade {
+        max-width: 80%; 
+        text-align: center;
+    }
+
+    /* Seção Projetos */
+    .projetos-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .projeto {
+        max-width: 80%; 
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Seção Contatos */
+    .contatos {
+        padding: 60px 5%; 
+        text-align: center;
+    }
+
+    .contatos form {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 5%;
+    }
+
+    .footer-logo, .footer-links, .footer-social {
+        margin-bottom: 10px;
+    }
+}
+
+/* Para dispositivos de 1296px ou menos em orientação horizontal */
+@media (max-width: 1296px) and (orientation: landscape) {
+    .home {
+        padding-top: 130px; 
+    }
+}
+
+/* Para dispositivos de 1024px ou menos em orientação horizontal */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .header {
+        position: relative; 
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 15px 5%;
+    }
+
+    .home {
+        padding-top: 20px; 
+    }
+
+    .sobre, .habilidades-container, .projetos-container, .contatos, .footer-container {
+        padding-top: 80px; 
+    }
+
+    .sobre{
+        padding-top: 130px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Seção Header */
+    .header {
+        padding: 15px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    /* Seção Home */
+    .home {
+        padding: 380px 0 20px;
+        overflow-x: hidden;
+    }
+
+    .conteudo-home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-texto h1 {
+        font-size: 36px;
+    }
+
+    .home-texto h3 {
+        font-size: 28px;
+    }
+
+    .home-texto p {
+        font-size: 16px;
+    }
+
+    .home-img img {
+        width: 300px;
+        display: none;
+    }
+
+    .home-logos a {
+        margin: 20px 10px;
+    }
+
+    .btn-box {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Seção Sobre */
+    .sobre {
+        flex-direction: column;
+        padding: 80px 0;
+        overflow-x: hidden;
+    }
+
+    #sobre .sobre-img img {
+        width: 250px;
+        margin: 0 auto;
+    }
+    .sobre-txt {
+        text-align: center;
+    }
+    .sobre-txt h2 {
+        font-size: 28px;
+    }
+    .sobre-txt h4, .sobre-txt p {
+        margin: 0;
+    }
+
+    /* Seção Habilidades */
+    .habilidades-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .habilidade {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    /* Seção Projetos */
+    .projetos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projeto {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Seção Contatos */
+    .contatos {
+        padding: 80px 0;
+    }
+    .contatos h2 {
+        font-size: 28px;
+    }
+    .contatos form {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .footer-logo, .footer-links, .footer-social {
+        margin-bottom: 10px;
+    }
+}
+
+/* Para dispositivos de 768px ou menos em orientação horizontal */
+@media (max-width: 768px) and (orientation: landscape) {
+    .header {
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 5%;
+    }
+
+    .home {
+        padding-top: 40px;
+    }
+
+    .sobre, .habilidades-container, .projetos-container, .contatos, .footer-container {
+        padding-top: 0;
+    }
+}
+
+
+/* Para smartphones (480px ou menor) */
+@media (max-width: 480px) {
+    /* Seção Header */
+    .header {
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    /* Seção Home */
+    .home {
+        padding: 300px 0 20px;
+        overflow-x: hidden;
+    }
+
+    .home-texto h1 {
+        font-size: 28px;
+    }
+
+    .home-texto h3 {
+        font-size: 24px;
+    }
+
+    .home-texto p {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .home-img img {
+        display: none;
+    }
+
+    .home-logos a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .btn-box {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+
+    /* Seção Sobre */
+    .sobre {
+        padding: 110px 0;
+        margin-left: -20px;
+        overflow-x: hidden;
+    }
+    #sobre .sobre-img img {
+        display: none; 
+    }
+    .sobre-txt {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .sobre-txt h2 {
+        font-size: 24px;
+    }
+    .sobre-txt p {
+        font-size: 16px;
+    }
+
+    /* Seção Habilidades */
+    .habilidades h2 {
+        font-size: 28px;
+    }
+    .habilidade h4 {
+        font-size: 16px;
+    }
+
+    /* Seção Projetos */
+    .projetos h2 {
+        font-size: 28px;
+    }
+    .projeto h4 {
+        font-size: 18px;
+    }
+    .projeto p {
+        font-size: 14px;
+    }
+
+    /* Seção Contatos */
+    .contatos h2 {
+        font-size: 28px;
+    }
+    .contatos button {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 10px;
+    }
+    .footer-logo h2 {
+        font-size: 1.2rem;
+    }
+    .footer-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-social a {
+        font-size: 1.1rem;
+    }
+    .footer-bottom p {
+        font-size: 0.7rem;
+    }
+}
