@@ -1,85 +1,52 @@
+// Efeito de digitação (Typed.js)
 var typed = new Typed('.texto', {
-    strings:["Estudo Progamação", "Sou Web Developer", "Sou Backend Developer"],
-    typeSpeed:100,
-    backSpeed:80,
-    backDelay:1000,
-    loop:true
+    strings: ["Desenvolvedor Full Stack", "Engenheiro de Software", "Desenvolvedor Mobile"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 2000,
+    loop: true
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const items = document.querySelectorAll('.carousel-item');
-    const carouselSection = document.querySelector('#sobre');
-    let currentItem = 0;
-    let autoRotateInterval;
+// Menu Mobile Toggle
+const menuIcon = document.querySelector('.menu-icon');
+const navbar = document.querySelector('.navbar');
 
-    function showItem(index, direction) {
-        items[currentItem].classList.remove('active', 'slide-right', 'slide-left');
-        
-        currentItem = (index + items.length) % items.length;
-        
-        if (direction === 'right') {
-            items[currentItem].classList.add('active', 'slide-right');
-        } else if (direction === 'left') {
-            items[currentItem].classList.add('active', 'slide-left');
-        } else {
-            items[currentItem].classList.add('active');
-        }
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    // Trocar ícone de hambúrguer para 'X'
+    const icon = menuIcon.querySelector('i');
+    if (navbar.classList.contains('active')) {
+        icon.classList.replace('bx-menu', 'bx-x');
+    } else {
+        icon.classList.replace('bx-x', 'bx-menu');
     }
-
-    document.querySelector('.carousel-prev').addEventListener('click', function () {
-        stopAutoRotate();
-        showItem(currentItem - 1, 'left');
-        startAutoRotate();
-    });
-
-    document.querySelector('.carousel-next').addEventListener('click', function () {
-        stopAutoRotate();
-        showItem(currentItem + 1, 'right');
-        startAutoRotate();
-    });
-
-    function startAutoRotate() {
-        if (!autoRotateInterval) {
-            autoRotateInterval = setInterval(function () {
-                showItem(currentItem + 1, 'right');
-            }, 15000);
-        }
-    }
-
-    function stopAutoRotate() {
-        clearInterval(autoRotateInterval);
-        autoRotateInterval = null;
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                startAutoRotate();
-            } else {
-                stopAutoRotate();
-            }
-        });
-    }, { threshold: 0.5 });
-
-    observer.observe(carouselSection);
 });
 
-document.querySelectorAll('.navbar a, .btn-box[href^="#"], .footer-links a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
+// Fechar menu mobile ao clicar em um link
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+        const icon = menuIcon.querySelector('i');
+        icon.classList.replace('bx-x', 'bx-menu');
+    });
+});
 
-        if (targetElement) {
-            const offsetTop = targetId === '#projetos' 
-                ? targetElement.offsetTop - 50 
-                : targetElement.offsetTop - 108;
-            
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
+// Marcação de link ativo durante o Scroll
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
         }
     });
-});
-
+};

@@ -3,203 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Iannini</title>
+    <title>Rafael Iannini | Engenheiro de Software</title>
     <link rel="icon" href="./src/imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/media.css">
-    <link rel="stylesheet" href="./src/css/mediaquery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">   
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
     <header class="header">        
+        <a href="#home" class="logo">RI.</a>
         <nav class="navbar">
-            <a href="#home" style="--i:1" class="active">Home</a>
-            <a href="#sobre" style="--i:2">Sobre mim</a>
-            <a href="#habilidades" style="--i:3">Habilidades</a>
-            <a href="#projetos" style="--i:4">Projetos</a>
-            <a href="#contatos" style="--i:5">Contatos</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
         </nav>
+        <div class="menu-icon"><i class='bx bx-menu'></i></div>
     </header>
 
     <section class="home" id="home">
         <div class="conteudo-home">
             <div class="home-texto">
-                <h3>Olá, meu nome é</h3>
+                <h3>Olá, eu sou</h3>
                 <h1>Rafael Iannini</h1>
-                <h3>E eu <span class="texto"></span></h3>
-                <p>Sou estudante do 2º período de Ciência da Computação na PUC Minas. Iniciei meus estudos em programação em 2023, participei de cursos complementares e colaborei em projetos de desenvolvimento de sites na universidade. Tenho 20 anos, bom nível de inglês e sou proativo, com facilidade para aprender. Busco um estágio em computação para ampliar meus conhecimentos e aplicar o que já aprendi.</p>
+                <h3><span class="texto"></span></h3>
+                <p>Estudante do 6º período de Ciência da Computação na PUC Minas e Engenheiro de Software Trainee. Focado no desenvolvimento de soluções robustas, migrações de dados e criação de aplicações modernas que unem performance e boa experiência do usuário.</p>
                 <div class="home-logos">
-                    <a href="https://wa.me/5531983745941" target="_blank" style="--i:6"><i class='bx bxl-whatsapp'></i></a>
-                    <a href="https://www.linkedin.com/in/rafael-iannini-a76ba5267/" target="_blank" style="--i:7"><i class="bx bxl-linkedin"></i></a>
-                    <a href="mailto:ianninirafael@gmail.com" target="_blank" style="--i:8"><i class="bx bxl-gmail"></i></a>
-                    <a href="https://github.com/rafaeliannini" target="_blank" style="--i:9"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rafael-iannini-a76ba5267/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/rafaeliannini" target="_blank"><i class="bx bxl-github"></i></a>
+                    <a href="https://wa.me/5531983745941" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:ianninirafael@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
                 </div>
-                <a href="#sobre" class="btn-box">Mais sobre Mim</a>
+                <div class="home-buttons">
+                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                    <a href="https://drive.google.com/file/d/SEU_LINK_AQUI/view" target="_blank" class="btn-secondary">Download CV</a>
+                </div>
             </div>
             <div class="home-img">
-                <img src="./src/imagens/MinhaFoto.png" alt="Minha foto">
+                <img src="./src/imagens/MinhaFoto.jpeg" alt="Rafael Iannini">
             </div>
         </div>
     </section>
 
     <section class="sobre" id="sobre">
         <div class="container">
-            <div class="sobre-img">
-                <img src="./src/imagens/MinhaFoto.png" alt="Minha foto">
-            </div>
             <div class="sobre-txt">
                 <h2>Sobre <span>Mim</span></h2>
-                <h4>Desenvolvedor e Estudante de Ciência da Computação</h4>
-    
-                <div class="carousel">
-                    <button class="carousel-prev">&lt;</button>
-                    <p class="carousel-item active">Sou estudante do 2º período de Ciência da Computação pela PUC Minas, com foco no desenvolvimento de habilidades em programação e ciência da computação. Tenho grande interesse por tecnologia e procuro constantemente novos conhecimentos e desafios para aprimorar minhas competências.</p>
-                    <p class="carousel-item">Desde que comecei a estudar programação em 2023, participei de cursos na área além da minha graduação, incluindo cursos de Python e Inteligência Artificial. Nesse tempo, aprendi várias linguagens de programação, como Java, C, C++, Python, HTML, CSS e JavaScript.</p>
-                    <p class="carousel-item">Tenho um bom domínio de SQL, adquirindo experiência com bancos de dados como PostgreSQL e utilizando ferramentas como PgAdmin. Também estou familiarizado com o uso de IDEs, como Eclipse e Visual Studio Code, além de GitHub Desktop para controle de versão.</p>
-                    <p class="carousel-item">Com um nível avançado de inglês, sou dedicado e proativo, destacando-me nas principais matérias do curso. Minha facilidade para aprender novas tecnologias e meu desejo constante de evoluir fazem com que eu esteja sempre buscando formas de agregar valor.</p>
-                    <p class="carousel-item">Estou em busca de uma oportunidade de estágio onde possa aplicar e expandir meus conhecimentos, contribuindo com minha motivação e dedicação para o desenvolvimento de projetos e soluções inovadoras, e apoiar a equipe com as habilidades que adquiri até agora.</p>
-                    <button class="carousel-next">&gt;</button>
-                </div>
-
-                <a href="https://drive.google.com/file/d/1FEWhnbbOXj6s6jv7AkguhzDZ6XmGiFnv/view?usp=sharing" target="_blank" class="btn-box">Download CV</a>
+                <p>Sou um desenvolvedor apaixonado por tecnologia, atualmente cursando o 6º período de Ciência da Computação na PUC Minas. Minha jornada na programação começou com uma forte base em Python, C e Java, e rapidamente se expandiu para o desenvolvimento Full Stack moderno e mobile.</p>
+                <p>Hoje, atuo profissionalmente com desenvolvimento web, integrações de sistemas e migração de grandes volumes de dados. Tenho facilidade em aprender novas tecnologias, inglês avançado e busco sempre criar arquiteturas escaláveis, seja construindo uma API estruturada, um frontend dinâmico ou um aplicativo mobile gamificado.</p>
             </div>
         </div>
     </section>
-    
 
-    <section class="habilidades" id="habilidades">
-        <h2>Habilidades</h2>
-        <div class="habilidades-container">
-            <div class="habilidade">
-                <h4><i class='bx bxl-java'></i> Java</h4>
-                <div class="barra">
-                    <div class="nivel" style="--level: 80%;"></div>
-                </div>
-            </div>
-            <div class="habilidade">
-                <h4><i class='bx bxl-javascript'></i> JavaScript</h4>
-                <div class="barra">
-                    <div class="nivel" style="--level: 70%;"></div>
-                </div>
-            </div>
-            <div class="habilidade">
-                <h4><i class='bx bxl-python'></i> Python</h4>
-                <div class="barra">
-                    <div class="nivel" style="--level: 65%;"></div>
-                </div>
-            </div>
-            <div class="habilidade">
-                <h4><i class='bx bxl-html5'></i> HTML</h4>
-                <div class="barra">
-                    <div class="nivel" style="--level: 90%;"></div>
-                </div>
-            </div>
-            <div class="habilidade">
-                <h4><i class='bx bxl-css3'></i> CSS</h4>
-                <div class="barra">
-                    <div class="nivel" style="--level: 80%;"></div>
-                </div>
-            </div>
-            <div class="habilidade">
-                <h4><i class='bx bx-data'></i> SQL</h4>
-                <div class="barra">
-                    <div class="nivel" style="--level: 65%;"></div>
-                </div>
-            </div>
-            <div class="habilidade">
-                <h4><i class='bx bxl-c-plus-plus'></i> C</h4>
-                <div class="barra">
-                    <div class="nivel" style="--level: 70%;"></div>
-                </div>
-            </div>
-            <div class="habilidade">
-                <h4><i class='bx bxl-c-plus-plus'></i> C++</h4>
-                <div class="barra">
-                    <div class="nivel" style="--level: 60%;"></div>
-                </div>
-            </div>
-            <div class="habilidade">
-                <h4><i class='bx bx-globe'></i> Inglês Avançado</h4>
-                <div class="barra">
-                    <div class="nivel" style="--level: 90%;"></div>
+    <section class="experiencia" id="experiencia">
+        <div class="container">
+            <h2>Minha <span>Experiência</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Engenheiro de Software Trainee</h3>
+                        <h4>LEVTY | Ago. 2025 - Atual</h4>
+                        <ul>
+                            <li>Atuação no desenvolvimento e manutenção de aplicações web utilizando JavaScript e Sydle One.</li>
+                            <li>Participação ativa em projetos para clientes reais, envolvendo demandas de front-end e back-end.</li>
+                            <li>Execução e monitoramento de grandes migrações de dados, garantindo integridade utilizando Elasticsearch.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
 
     <section class="projetos" id="projetos">
         <h2>Meus <span>Projetos</span></h2>
         <div class="projetos-container">
-            <div class="projeto">
-                <img src="./src/imagens/projeto3.png" alt="Projeto 1">
-                <h4>Análise de Dados</h4>
-                <p>Projeto de análise de dados para identificar causas de cancelamento de clientes e propostas de retenção, reduzindo a taxa de
-                    cancelamento de 56% para 18%, utilizando Python, Pandas e Plotly.</p>
-                <a href="https://github.com/rafaeliannini/Projetos-Jornada-Python" target="_blank" class="btn-box">Ver Mais</a>
+            <div class="projeto-card">
+                <div class="projeto-img"><i class='bx bx-mobile-alt'></i></div>
+                <div class="projeto-info">
+                    <h4>Health & Training App</h4>
+                    <span class="tech-stack">Flutter • Dart • Firebase</span>
+                    <p>Aplicativo mobile all-in-one de saúde. Conta com sistema gamificado de contagem de calorias e gestão de treinos personalizados, focado em retenção e engajamento do usuário.</p>
+                </div>
             </div>
-        <div class="projetos-container">
-            <div class="projeto">
-                <img src="./src/imagens/projeto1.png" alt="Projeto 1">
-                <h4>Projeto iPet</h4>
-                <p>Desenvolvimento de uma aplicação web para mostrar os locais petfriendly em Belo Horizonte, com frontend em
-                    HTML/CSS e JavaScript, e backend em Java (Spark) e banco de dados PostgreSQL.</p>
-                <a href="https://github.com/rafaeliannini/iPetBD" target="_blank" class="btn-box">Ver Mais</a>
+
+            <div class="projeto-card">
+                <div class="projeto-img"><i class='bx bx-football'></i></div>
+                <div class="projeto-info">
+                    <h4>Fut7Setup</h4>
+                    <span class="tech-stack">React.js • Node.js • TypeScript</span>
+                    <p>Aplicação web Full Stack para criação de escalações personalizadas da Kings League. Permite filtragem avançada de jogadores e organização tática visual.</p>
+                    <a href="https://fut7setup.vercel.app" target="_blank" class="btn-link">Ver Site <i class='bx bx-link-external'></i></a>
+                </div>
             </div>
-            <div class="projeto">
-                <img src="./src/imagens/projeto2.png" alt="Projeto 2">
-                <h4>Inteligência Artificial</h4>
-                <p>Desenvolvimento de um modelo de Inteligência Artificial para prever nota de crédito de clientes de uma base de dados com 86% de precisão, utilizando
-                    Python, Pandas e Scikit-learn. </p>
-                <a href="https://github.com/rafaeliannini/Projetos-Jornada-Python" target="_blank" class="btn-box">Ver Mais</a>
+
+            <div class="projeto-card">
+                <div class="projeto-img"><i class='bx bx-map-pin'></i></div>
+                <div class="projeto-info">
+                    <h4>iPet</h4>
+                    <span class="tech-stack">Java (Spark) • PostgreSQL • JS • IA</span>
+                    <p>Plataforma para mapeamento de locais pet-friendly em BH. Inclui integração com IA de reconhecimento de imagem para avaliar a limpeza dos locais a partir de fotos.</p>
+                    <a href="https://github.com/rafaeliannini/iPetBD" target="_blank" class="btn-link">Ver Repositório <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="projeto-card">
+                <div class="projeto-img"><i class='bx bx-window-alt'></i></div>
+                <div class="projeto-info">
+                    <h4>Portfólio Psicologia</h4>
+                    <span class="tech-stack">HTML • CSS • JavaScript</span>
+                    <p>Site institucional e portfólio desenvolvido para uma cliente psicóloga. Foco em SEO, design responsivo e conversão de novos pacientes através da exposição de serviços.</p>
+                    <a href="https://claudiamoreira.netlify.app" target="_blank" class="btn-link">Ver Site <i class='bx bx-link-external'></i></a>
+
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="contatos" id="contatos">
-        <h2>Entre em <span>Contato</span></h2>
-        <form action="https://formspree.io/f/xdkogkqd" method="POST">
-            <label>
-                Email:
-                <input type="email" name="email" placeholder="Seu Email">
-              </label>
-              <label>
-                Sua Mensagem:
-                <textarea name="message" placeholder="Digite Aqui a Sua Mensagem"></textarea>
-              </label>
-              <button type="submit">Enviar</button>
-        </form>
+    <section class="habilidades" id="habilidades">
+        <h2>Principais <span>Habilidades</span></h2>
+        <div class="habilidades-grid">
+            <div class="skill-category">
+                <h3>Front-end & Mobile</h3>
+                <div class="skill-tags">
+                    <span>React.js</span>
+                    <span>Flutter</span>
+                    <span>TypeScript</span>
+                    <span>JavaScript</span>
+                    <span>HTML5/CSS3</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Back-end & Banco de Dados</h3>
+                <div class="skill-tags">
+                    <span>Node.js</span>
+                    <span>Java</span>
+                    <span>Python</span>
+                    <span>PostgreSQL</span>
+                    <span>SQL</span>
+                    <span>Elasticsearch</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Ferramentas & Outros</h3>
+                <div class="skill-tags">
+                    <span>Git / GitHub</span>
+                    <span>Inglês Avançado</span>
+                    <span>Pandas / Scikit-learn</span>
+                    <span>Vercel / Azure</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="contato-container">
+            <h2>Vamos <span>Conversar?</span></h2>
+            <p>Estou sempre aberto a novos desafios e oportunidades na área de tecnologia.</p>
+            <form action="https://formspree.io/f/xdkogkqd" method="POST">
+                <div class="input-group">
+                    <input type="text" name="name" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu E-mail" required>
+                </div>
+                <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
     </section>
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <h2>Rafael Iannini</h2>
-                <p>Desenvolvedor e estudante de Ciência da Computação.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Navegação</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contatos">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h4>Minhas Redes</h4>
-                <a href="https://wa.me/5531983745941" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-                <a href="https://www.linkedin.com/in/rafael-iannini-a76ba5267/" target="_blank"><i class="bx bxl-linkedin"></i></a>
-                <a href="mailto:ianninirafael@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a>
-                <a href="https://github.com/rafaeliannini" target="_blank"><i class="bx bxl-github"></i></a>
-            </div>
-        </div>
         <div class="footer-bottom">
             <p>&copy; 2024 Rafael Iannini. Todos os direitos reservados.</p>
         </div>
