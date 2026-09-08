@@ -8,7 +8,7 @@ const translations = {
         nav_habilidades: "Habilidades",
         nav_contato: "Contato",
         home_hello: "Olá, eu sou",
-        home_desc: "Estudante do 6º período de Ciência da Computação na PUC Minas e Engenheiro de Software Trainee. Focado no desenvolvimento de soluções robustas, migrações de dados e criação de aplicações modernas que unem performance e boa experiência do usuário.",
+        home_desc: "Estudante do 6º período de Ciência da Computação na PUC Minas e Desenvolvedor / Engenheiro de Software. Focado no desenvolvimento de soluções robustas, integrações de sistemas e criação de aplicações modernas que unem performance e boa experiência do usuário.",
         btn_projects: "Ver Projetos",
         btn_cv: "Download CV",
         sobre_title_1: "Sobre ",
@@ -17,11 +17,21 @@ const translations = {
         sobre_p2: "Hoje, atuo profissionalmente com desenvolvimento web, integrações de sistemas e migração de grandes volumes de dados. Tenho facilidade em aprender novas tecnologias, inglês avançado e busco sempre criar arquiteturas escaláveis, seja construindo uma API estruturada, um frontend dinâmico ou um aplicativo mobile gamificado.",
         exp_title_1: "Minha ",
         exp_title_2: "Experiência",
+        
+        // Tagna
+        exp_role_tagna: "Estagiário de Desenvolvimento de Software",
+        exp_date_tagna: "Tagna | Set. 2026 - Atual",
+        exp_li1_tagna: "Desenvolvimento e evolução de funcionalidades para os módulos da plataforma NEXUM, focando em escalabilidade e experiência do usuário.",
+        exp_li2_tagna: "Construção de soluções no back-end e front-end utilizando tecnologias como Java, Spring Boot, Node.js e React.js.",
+        exp_li3_tagna: "Gerenciamento e integração de banco de dados com MySQL e orquestração de serviços utilizando a infraestrutura do Google Cloud.",
+        
+        // LEVTY
         exp_role: "Engenheiro de Software Trainee",
-        exp_date: "LEVTY | Jul. 2025 - Atual",
+        exp_date: "LEVTY | Jul. 2025 - Set. 2026",
         exp_li1: "Atuação no desenvolvimento e manutenção de aplicações web utilizando JavaScript e Sydle One.",
         exp_li2: "Participação ativa em projetos para clientes reais, envolvendo demandas de front-end e back-end.",
         exp_li3: "Execução e monitoramento de grandes migrações de dados, garantindo integridade utilizando Elasticsearch.",
+        
         proj_title_1: "Meus ",
         proj_title_2: "Projetos",
         proj_desc_1: "Aplicativo mobile all-in-one de saúde. Conta com sistema gamificado de contagem de calorias e gestão de treinos personalizados, focado em retenção e engajamento do usuário.",
@@ -45,7 +55,7 @@ const translations = {
         cont_ph_email: "Seu E-mail",
         cont_ph_msg: "Sua Mensagem",
         cont_btn: "Enviar Mensagem",
-        footer_text: "&copy; 2024 Rafael Iannini. Todos os direitos reservados."
+        footer_text: "&copy; 2026 Rafael Iannini. Todos os direitos reservados."
     },
     en: {
         nav_home: "Home",
@@ -55,7 +65,7 @@ const translations = {
         nav_habilidades: "Skills",
         nav_contato: "Contact",
         home_hello: "Hello, I am",
-        home_desc: "Computer Science student (6th term) at PUC Minas and Software Engineer Trainee. Focused on developing robust solutions, data migrations, and creating modern applications that combine performance with a great user experience.",
+        home_desc: "Computer Science student (6th term) at PUC Minas and Developer / Software Engineer. Focused on developing robust solutions, system integrations, and creating modern applications that combine performance with a great user experience.",
         btn_projects: "View Projects",
         btn_cv: "Download CV",
         sobre_title_1: "About ",
@@ -64,11 +74,21 @@ const translations = {
         sobre_p2: "Today, I work professionally with web development, system integrations, and large-scale data migrations. I learn new technologies easily, have advanced English skills, and always strive to create scalable architectures, whether building a structured API, a dynamic frontend, or a gamified mobile app.",
         exp_title_1: "My ",
         exp_title_2: "Experience",
+        
+        // Tagna
+        exp_role_tagna: "Software Development Intern",
+        exp_date_tagna: "Tagna | Sep 2026 - Present",
+        exp_li1_tagna: "Development and evolution of features for the NEXUM platform modules, focusing on scalability and user experience.",
+        exp_li2_tagna: "Building back-end and front-end solutions using technologies such as Java, Spring Boot, Node.js, and React.js.",
+        exp_li3_tagna: "Database management and integration with MySQL, and service orchestration using Google Cloud infrastructure.",
+
+        // LEVTY
         exp_role: "Software Engineer Trainee",
-        exp_date: "LEVTY | Jul 2025 - Present",
+        exp_date: "LEVTY | Jul 2025 - Sep 2026",
         exp_li1: "Development and maintenance of web applications using JavaScript and Sydle One.",
         exp_li2: "Active participation in real client projects, involving both front-end and back-end demands.",
         exp_li3: "Execution and monitoring of large data migrations, ensuring integrity using Elasticsearch.",
+        
         proj_title_1: "My ",
         proj_title_2: "Projects",
         proj_desc_1: "All-in-one health mobile app. Features a gamified calorie counting system and personalized workout management, focused on user retention and engagement.",
@@ -92,7 +112,7 @@ const translations = {
         cont_ph_email: "Your Email",
         cont_ph_msg: "Your Message",
         cont_btn: "Send Message",
-        footer_text: "&copy; 2024 Rafael Iannini. All rights reserved."
+        footer_text: "&copy; 2026 Rafael Iannini. All rights reserved."
     }
 };
 

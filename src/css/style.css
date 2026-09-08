@@ -8,13 +8,24 @@
 }
 
 :root {
-    --bg-dark: #0f172a;       /* Fundo principal profundo */
-    --bg-card: #1e293b;       /* Fundo de seções/cards */
-    --primary: #3b82f6;       /* Azul corporativo moderno */
-    --primary-hover: #2563eb;
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --border-color: #334155;
+    /* Fundo */
+    --bg-dark: #171814;
+    --bg-card: #23251f;
+    --bg-card-light: #2d3028;
+
+    /* Cor principal */
+    --primary: #c9b27c;
+    --primary-hover: #dfc990;
+
+    /* Textos */
+    --text-main: #f2efe7;
+    --text-muted: #aaa99d;
+
+    /* Bordas */
+    --border-color: #3b3d34;
+
+    /* Sombras */
+    --shadow: rgba(0, 0, 0, 0.35);
 }
 
 body {
@@ -28,6 +39,7 @@ span {
 }
 
 /* --- Tipografia Geral --- */
+
 h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -36,13 +48,14 @@ h2 {
 }
 
 /* --- Header & Nav --- */
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1.5rem 8%;
-    background-color: rgba(15, 23, 42, 0.95);
+    background-color: rgba(23, 24, 20, 0.95);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -52,11 +65,20 @@ h2 {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--text-main);
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    letter-spacing: 1px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.08);
 }
 
 .navbar {
@@ -72,7 +94,8 @@ h2 {
     transition: color 0.3s;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover,
+.navbar a.active {
     color: var(--primary);
 }
 
@@ -84,7 +107,9 @@ h2 {
 }
 
 /* --- Botões --- */
-.btn-primary, .btn-secondary {
+
+.btn-primary,
+.btn-secondary {
     display: inline-block;
     padding: 0.8rem 2rem;
     border-radius: 6px;
@@ -92,18 +117,18 @@ h2 {
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border: none;
     font-size: 1rem;
 }
 
 .btn-primary {
     background-color: var(--primary);
-    color: #fff;
+    color: #171814;
 }
 
 .btn-primary:hover {
     background-color: var(--primary-hover);
     transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(201, 178, 124, 0.15);
 }
 
 .btn-secondary {
@@ -115,9 +140,11 @@ h2 {
 .btn-secondary:hover {
     background-color: var(--bg-card);
     border-color: var(--primary);
+    color: var(--primary);
 }
 
 /* --- Seção Home --- */
+
 .home {
     min-height: 100vh;
     display: flex;
@@ -148,6 +175,11 @@ h2 {
     font-weight: 800;
     line-height: 1.1;
     margin: 0.5rem 0 1rem;
+}
+
+/* Destaques dentro do título */
+.home-texto h1 span {
+    color: var(--primary);
 }
 
 .home-texto p {
@@ -181,6 +213,7 @@ h2 {
 .home-logos a:hover {
     background-color: var(--primary);
     border-color: var(--primary);
+    color: #171814;
     transform: translateY(-3px);
 }
 
@@ -194,11 +227,12 @@ h2 {
     height: 380px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px var(--shadow);
     border: 1px solid var(--border-color);
 }
 
 /* --- Seções Padrão --- */
+
 section {
     padding: 6rem 8%;
 }
@@ -209,6 +243,7 @@ section {
 }
 
 /* --- Sobre Mim --- */
+
 .sobre {
     background-color: var(--bg-card);
 }
@@ -226,6 +261,7 @@ section {
 }
 
 /* --- Experiência --- */
+
 .timeline {
     max-width: 800px;
     margin: 0 auto;
@@ -255,6 +291,12 @@ section {
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid var(--border-color);
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.timeline-content:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
 }
 
 .timeline-content h3 {
@@ -279,6 +321,7 @@ section {
 }
 
 /* --- Projetos --- */
+
 .projetos {
     background-color: var(--bg-card);
 }
@@ -296,7 +339,7 @@ section {
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    transition: transform 0.3s;
+    transition: transform 0.3s, border-color 0.3s;
     display: flex;
     flex-direction: column;
 }
@@ -348,6 +391,7 @@ section {
 }
 
 /* --- Habilidades --- */
+
 .habilidades-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -382,11 +426,12 @@ section {
 
 .skill-tags span:hover {
     background-color: var(--primary);
-    color: #fff;
+    color: #171814;
     border-color: var(--primary);
 }
 
 /* --- Contato --- */
+
 .contato {
     background-color: var(--bg-card);
 }
@@ -413,7 +458,8 @@ form {
     gap: 1.5rem;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 1rem;
     background-color: var(--bg-dark);
@@ -422,13 +468,17 @@ input, textarea {
     color: var(--text-main);
     outline: none;
     font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(201, 178, 124, 0.08);
 }
 
 /* --- Footer --- */
+
 .footer {
     text-align: center;
     padding: 2rem;
@@ -441,38 +491,48 @@ input:focus, textarea:focus {
     font-size: 0.9rem;
 }
 
-/* --- Responsividade (Media Queries) --- */
+/* --- Responsividade --- */
+
 @media (max-width: 991px) {
+
     .header {
         padding: 1.5rem 5%;
     }
+
     section {
         padding: 5rem 5%;
     }
+
     .conteudo-home {
         flex-direction: column;
         text-align: center;
         gap: 3rem;
         margin-top: 4rem;
     }
+
     .home-logos {
         justify-content: center;
     }
+
     .home-buttons {
         justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
+
     h2 {
         font-size: 2rem;
     }
+
     .home-texto h1 {
         font-size: 3rem;
     }
+
     .menu-icon {
         display: block;
     }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -484,11 +544,13 @@ input:focus, textarea:focus {
         padding: 2rem 0;
         gap: 1.5rem;
         border-top: 1px solid var(--border-color);
-        display: none; /* Controlado via JS */
+        display: none;
     }
+
     .navbar.active {
         display: flex;
     }
+
     .input-group {
         flex-direction: column;
         gap: 1.5rem;
@@ -496,9 +558,11 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 480px) {
+
     .home-texto h1 {
         font-size: 2.5rem;
     }
+
     .home-img img {
         width: 100%;
         height: auto;
