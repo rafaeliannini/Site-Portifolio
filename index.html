@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <!-- ScrollReveal (Animações de rolagem) -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <style>
         .lang-switch {
             display: flex;
@@ -44,7 +48,7 @@
 <body>
     <header class="header">
         <a href="#home" class="logo">
-            <img src="./src/imagens/icon.png" alt="Rafael Iannini">
+            <img src="./src/imagens/icon2.png" alt="Rafael Iannini">
         </a>
         <nav class="navbar">
             <a href="#home" class="active" data-i18n="nav_home"></a>
@@ -69,8 +73,7 @@
                 <h3><span class="texto"></span></h3>
                 <p data-i18n="home_desc"></p>
                 <div class="home-logos">
-                    <a href="https://www.linkedin.com/in/rafael-iannini-a76ba5267/" target="_blank"><i
-                            class="bx bxl-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/rafael-iannini-a76ba5267/" target="_blank"><i class="bx bxl-linkedin"></i></a>
                     <a href="https://github.com/rafaeliannini" target="_blank"><i class="bx bxl-github"></i></a>
                     <a href="https://wa.me/5531983745941" target="_blank"><i class='bx bxl-whatsapp'></i></a>
                     <a href="mailto:ianninirafael@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
@@ -100,8 +103,6 @@
         <div class="container">
             <h2><span data-i18n="exp_title_1"></span> <span data-i18n="exp_title_2"></span></h2>
             <div class="timeline">
-                
-                <!-- Experiência Tagna (Mais Recente) -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
@@ -114,8 +115,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <!-- Experiência LEVTY -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
@@ -128,58 +127,54 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <section class="projetos" id="projetos">
         <h2><span data-i18n="proj_title_1"></span> <span data-i18n="proj_title_2"></span></h2>
+        
         <div class="projetos-container">
-            <div class="projeto-card">
+            <!-- Efeito Vanilla Tilt adicionado com data-tilt -->
+            <div class="projeto-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
                 <div class="projeto-img"><i class='bx bx-mobile-alt'></i></div>
                 <div class="projeto-info">
                     <h4>Invictus App</h4>
                     <span class="tech-stack">Flutter • Dart • Firebase</span>
                     <p data-i18n="proj_desc_1"></p>
-                    <a href="https://github.com/rafaeliannini/invictusApp" target="_blank" class="btn-link"><span
-                            data-i18n="proj_btn_repo"></span> <i class='bx bx-link-external'></i></a>
+                    <a href="https://github.com/rafaeliannini/invictusApp" target="_blank" class="btn-link"><span data-i18n="proj_btn_repo"></span> <i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
-            <div class="projeto-card">
+            <div class="projeto-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
                 <div class="projeto-img"><i class='bx bx-football'></i></div>
                 <div class="projeto-info">
                     <h4>Fut7Setup</h4>
                     <span class="tech-stack">React.js • Node.js • TypeScript</span>
                     <p data-i18n="proj_desc_2"></p>
-                    <a href="https://github.com/rafaeliannini/Fut7Setup" target="_blank" class="btn-link"><span
-                            data-i18n="proj_btn_repo"></span> <i class='bx bx-link-external'></i></a>
+                    <a href="https://github.com/rafaeliannini/Fut7Setup" target="_blank" class="btn-link"><span data-i18n="proj_btn_repo"></span> <i class='bx bx-link-external'></i></a>
                     <p></p>
-                    <a href="https://fut7setup.vercel.app" target="_blank" class="btn-link"><span
-                            data-i18n="proj_btn_site"></span> <i class='bx bx-link-external'></i></a>
+                    <a href="https://fut7setup.vercel.app" target="_blank" class="btn-link"><span data-i18n="proj_btn_site"></span> <i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
-            <div class="projeto-card">
+            <div class="projeto-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
                 <div class="projeto-img"><i class='bx bx-map-pin'></i></div>
                 <div class="projeto-info">
                     <h4>iPet</h4>
                     <span class="tech-stack">Java (Spark) • PostgreSQL • JS • IA</span>
                     <p data-i18n="proj_desc_3"></p>
-                    <a href="https://github.com/rafaeliannini/iPetBD" target="_blank" class="btn-link"><span
-                            data-i18n="proj_btn_repo_2"></span> <i class='bx bx-link-external'></i></a>
+                    <a href="https://github.com/rafaeliannini/iPetBD" target="_blank" class="btn-link"><span data-i18n="proj_btn_repo_2"></span> <i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
-            <div class="projeto-card">
+            <div class="projeto-card" data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-max-glare="0.2">
                 <div class="projeto-img"><i class='bx bx-window-alt'></i></div>
                 <div class="projeto-info">
                     <h4>Portfólio Psicologia</h4>
                     <span class="tech-stack">HTML • CSS • JavaScript</span>
                     <p data-i18n="proj_desc_4"></p>
-                    <a href="https://claudiamoreira.netlify.app" target="_blank" class="btn-link"><span
-                            data-i18n="proj_btn_site_2"></span> <i class='bx bx-link-external'></i></a>
+                    <a href="https://claudiamoreira.netlify.app" target="_blank" class="btn-link"><span data-i18n="proj_btn_site_2"></span> <i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
@@ -191,35 +186,34 @@
             <div class="skill-category">
                 <h3 data-i18n="hab_cat_1"></h3>
                 <div class="skill-tags">
-                    <span>React.js</span>
-                    <span>Flutter</span>
-                    <span>TypeScript</span>
-                    <span>JavaScript</span>
-                    <span>HTML5/CSS3</span>
+                    <span>React.js</span><span>Flutter</span><span>TypeScript</span><span>JavaScript</span><span>HTML5/CSS3</span>
                 </div>
             </div>
             <div class="skill-category">
                 <h3 data-i18n="hab_cat_2"></h3>
                 <div class="skill-tags">
-                    <span>Node.js</span>
-                    <span>Java</span>
-                    <span>Python</span>
-                    <span>PostgreSQL</span>
-                    <span>SQL</span>
-                    <span>Elasticsearch</span>
+                    <span>Node.js</span><span>Java</span><span>Python</span><span>PostgreSQL</span><span>SQL</span><span>Elasticsearch</span>
                 </div>
             </div>
             <div class="skill-category">
                 <h3 data-i18n="hab_cat_3"></h3>
                 <div class="skill-tags">
-                    <span>Git / GitHub</span>
-                    <span data-i18n="hab_tag_en"></span>
-                    <span>Pandas / Scikit-learn</span>
-                    <span>Vercel / Azure</span>
+                    <span>Git / GitHub</span><span data-i18n="hab_tag_en"></span><span>Pandas / Scikit-learn</span><span>Vercel / Azure</span>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Nova Seção Completa: GitHub -->
+    <section class="github" id="github">
+        <h2><i class='bx bxl-github'></i> <span data-i18n="github_title"></span></h2>
+        <div id="github-repos" class="github-repos-container">
+            <!-- Cards injetados via JS -->
+        </div>
+    </section>
+
+    <!-- Sua seção de contato já existente -->
+    <section class="contato" id="contato">
 
     <section class="contato" id="contato">
         <div class="contato-container">
@@ -242,11 +236,11 @@
         </div>
     </footer>
 
+    <!-- Vanilla Tilt (Efeito 3D nos cards) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="./src/js/main.js"></script>
     <script>
-        // Inicializa o site no idioma Português carregando os textos do JS
         setLanguage('pt');
     </script>
 </body>
-
 </html>

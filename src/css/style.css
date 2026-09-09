@@ -32,9 +32,13 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-main);
     line-height: 1.6;
+    overflow-x: hidden; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-span {
+span { 
     color: var(--primary);
 }
 
@@ -433,7 +437,7 @@ section {
 /* --- Contato --- */
 
 .contato {
-    background-color: var(--bg-card);
+    background-color: var(--bg-dark);
 }
 
 .contato-container {
@@ -477,18 +481,80 @@ textarea:focus {
     box-shadow: 0 0 0 2px rgba(201, 178, 124, 0.08);
 }
 
-/* --- Footer --- */
-
-.footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: var(--bg-dark);
-    border-top: 1px solid var(--border-color);
+/* --- SEÇÃO GITHUB COMPLETA --- */
+.github {
+    padding: 6rem 9% 2rem; /* Mantém o padrão de espaçamento das outras seções */
+    background: var(--bg-card)
 }
 
-.footer-bottom p {
-    color: var(--text-muted);
+.github h2 {
+    text-align: center;
+    font-size: 3rem; /* Padrão dos seus outros títulos */
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.github-repos-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Forçando o estilo do link para não ficar azul */
+a.github-card {
+    background: var(--bg-dark); 
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 320px;
+    text-align: left;
+    text-decoration: none !important;
+    color: var(--text-color, #fff) !important; 
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a.github-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary, #0ef); /* Cor de destaque ao passar o mouse */
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.1);
+}
+
+a.github-card h4 {
+    font-size: 1.3rem;
+    color: var(--primary, #0ef) !important; /* Título com a cor primária */
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+a.github-card p {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    color: var(--text-color, #fff) !important;
+}
+
+.github-stats {
+    display: flex;
+    gap: 15px;
     font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color, #fff) !important;
+}
+
+.github-stats span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* --- Responsividade --- */
@@ -567,4 +633,24 @@ textarea:focus {
         width: 100%;
         height: auto;
     }
+}
+
+/* --- Footer --- */
+.footer {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    display: block; /* Garante que ocupe a linha inteira */
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-bottom p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
 }
