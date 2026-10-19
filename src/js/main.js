@@ -13,7 +13,7 @@ const translations = {
         exp_li1_tagna: "Desenvolvimento e evolução de funcionalidades para os módulos da plataforma NEXUM, focando em escalabilidade e experiência do usuário.",
         exp_li2_tagna: "Construção de soluções no back-end e front-end utilizando tecnologias como Java, Spring Boot, Node.js e React.js.",
         exp_li3_tagna: "Gerenciamento e integração de banco de dados com MySQL e orquestração de serviços utilizando a infraestrutura do Google Cloud.",
-        exp_role: "Engenheiro de Software Trainee", exp_date: "LEVTY | Jul. 2025 - Ago. 2026",
+        exp_role: "Engenheiro de Software Trainee", exp_date: "LEVTY | Jul. 2025 - Set. 2026",
         exp_li1: "Atuação no desenvolvimento e manutenção de aplicações web utilizando JavaScript e Sydle One.",
         exp_li2: "Participação ativa em projetos para clientes reais, envolvendo demandas de front-end e back-end.",
         exp_li3: "Execução e monitoramento de grandes migrações de dados, garantindo integridade utilizando Elasticsearch.",
@@ -51,7 +51,7 @@ const translations = {
         exp_li1_tagna: "Development and evolution of features for the NEXUM platform modules, focusing on scalability and user experience.",
         exp_li2_tagna: "Building back-end and front-end solutions using technologies such as Java, Spring Boot, Node.js, and React.js.",
         exp_li3_tagna: "Database management and integration with MySQL, and service orchestration using Google Cloud infrastructure.",
-        exp_role: "Software Engineer Trainee", exp_date: "LEVTY | Jul 2025 - Aug 2026",
+        exp_role: "Software Engineer Trainee", exp_date: "LEVTY | Jul 2025 - Sep 2026",
         exp_li1: "Development and maintenance of web applications using JavaScript and Sydle One.",
         exp_li2: "Active participation in real client projects, involving both front-end and back-end demands.",
         exp_li3: "Execution and monitoring of large data migrations, ensuring integrity using Elasticsearch.",
@@ -165,9 +165,9 @@ async function fetchGitHubData() {
     if (!container) return;
 
     try {
-        // Busca somente os 2 repositórios mais recentemente atualizados
+        // Busca os 3 repositórios mais recentemente atualizados
         const response = await fetch(
-            `https://api.github.com/users/${username}/repos?sort=updated&direction=desc&per_page=2`
+            `https://api.github.com/users/${username}/repos?sort=updated&direction=desc&per_page=3`
         );
 
         if (!response.ok) {

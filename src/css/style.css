@@ -643,13 +643,7 @@ a.github-card p {
 
 /* --- Footer --- */
 .footer {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    display: block; /* Garante que ocupe a linha inteira */
+    width: 100%;
     text-align: center;
     padding: 2rem 0;
     background-color: var(--bg-card);
